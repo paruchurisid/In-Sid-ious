@@ -9,11 +9,11 @@
 
 ## Golden path
 
-1. **0:00–0:35:** Point to Portfolio MASR and exposure mitigated. Select `acct_001 — Northstar Logistics`.
+1. **0:00–0:35:** Select `acct_001 — Northstar Logistics` and point to its account-level at-risk MRR and utilization.
 2. **0:35–1:15:** Explain paid seats versus active seats and the 20% utilization diagnosis.
 3. **1:15–2:10:** Read the red baseline exploit, then follow the central patch operations to the green remediation outcome.
 4. **2:10–2:45:** Move the persona slider to Discount Grifter and explain that the consultation rejects repeat discount farming.
-5. **2:45–3:00:** Close on MASR moving from 0.8000 to 0.9500.
+5. **2:45–3:00:** Select `acct_009 — Harbor Works` to show the Healthy Anchor correctly has no policy exploit, then close on MASR moving from 0.8000 to 0.9500 for an audited account.
 
 ## Recovery
 
