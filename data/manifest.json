@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "accounts": 2000,
+  "archetype_counts": {
+    "budget_cut": 120,
+    "champion_departure": 160,
+    "discount_grifter": 80,
+    "failed_onboarding": 180,
+    "frustration_driven": 160,
+    "healthy_growth": 360,
+    "healthy_lumpy": 160,
+    "healthy_seasonal": 240,
+    "payment_failure": 60,
+    "price_shock": 100,
+    "seat_overprovisioned": 140,
+    "silent_decay": 240
+  },
+  "churn_rate": 0.22,
+  "files": [
+    "accounts.parquet",
+    "daily_events.parquet"
+  ]
+}

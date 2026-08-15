@@ -1,0 +1,384 @@
+[
+  {
+    "run_id": "6150b137-e9d6-5102-ab2e-546f53883af0",
+    "account_id": "acct_001",
+    "account_name": "Northstar Logistics",
+    "archetype": "seat_shelf_ghost",
+    "timestamp": "2026-08-01T12:00:00+00:00",
+    "gap": {
+      "unused_high_value_features": [
+        "webhooks",
+        "seat_invites"
+      ],
+      "utilization_ratio": 0.2,
+      "roi_gap_usd_monthly": "400",
+      "recommended_action": "downgrade",
+      "narrative": "Northstar Logistics has a measured utilization gap requiring downgrade.",
+      "evidence": [
+        "90-day telemetry aggregation",
+        "entitlement comparison"
+      ]
+    },
+    "before_offer": {
+      "text": "35% discount for six months",
+      "offer_type": "percent_off",
+      "discount_pct": "35",
+      "duration_months": 6,
+      "sequence_idx": 1,
+      "rule_id": "r_seat_shelf"
+    },
+    "alerts": [
+      {
+        "vuln_class": "uncapped_discount",
+        "severity": "critical",
+        "persona_ids": [
+          "persona_shelf_001"
+        ],
+        "ltv_erosion_usd": "1260.00",
+        "annualized_exposure_usd": "50400.0",
+        "offending_rule_ids": [
+          "r_seat_shelf"
+        ]
+      },
+      {
+        "vuln_class": "unnecessary_concession",
+        "severity": "high",
+        "persona_ids": [
+          "persona_shelf_001"
+        ],
+        "ltv_erosion_usd": "0.00",
+        "annualized_exposure_usd": "0.00",
+        "offending_rule_ids": [
+          "r_seat_shelf"
+        ]
+      }
+    ],
+    "patch": {
+      "patch_id": "patch-acct_001",
+      "base_policy_version": "v1",
+      "operations": [
+        {
+          "op": "lower_ceiling",
+          "value": 30,
+          "rule_id": null
+        },
+        {
+          "op": "shorten_duration",
+          "value": 3,
+          "rule_id": null
+        },
+        {
+          "op": "extend_cooldown",
+          "value": 180,
+          "rule_id": null
+        },
+        {
+          "op": "substitute_offer",
+          "value": "non_monetary",
+          "rule_id": null
+        }
+      ],
+      "justification": "Caps monetary concessions and replaces the repeatable discount with value recovery.",
+      "projected_margin_saved_usd": "1260.00",
+      "projected_save_rate_delta": -0.02,
+      "requires_human_approval": false
+    },
+    "after_offer": {
+      "text": "Complimentary workflow consultation and right-sizing review",
+      "offer_type": "consultation",
+      "discount_pct": "0",
+      "duration_months": 0,
+      "sequence_idx": 2,
+      "rule_id": "r_seat_shelf"
+    },
+    "masr_before": "0.8000",
+    "masr_after": "0.9500",
+    "improved": true
+  },
+  {
+    "run_id": "80e73cc3-3e07-57c0-84e3-661f7a3c4d57",
+    "account_id": "acct_002",
+    "account_name": "Alpine Health",
+    "archetype": "seat_shelf_ghost",
+    "timestamp": "2026-08-01T12:00:00+00:00",
+    "gap": {
+      "unused_high_value_features": [
+        "webhooks",
+        "seat_invites"
+      ],
+      "utilization_ratio": 0.2,
+      "roi_gap_usd_monthly": "400",
+      "recommended_action": "downgrade",
+      "narrative": "Alpine Health has a measured utilization gap requiring downgrade.",
+      "evidence": [
+        "90-day telemetry aggregation",
+        "entitlement comparison"
+      ]
+    },
+    "before_offer": {
+      "text": "35% discount for six months",
+      "offer_type": "percent_off",
+      "discount_pct": "35",
+      "duration_months": 6,
+      "sequence_idx": 1,
+      "rule_id": "r_seat_shelf"
+    },
+    "alerts": [
+      {
+        "vuln_class": "uncapped_discount",
+        "severity": "critical",
+        "persona_ids": [
+          "persona_shelf_001"
+        ],
+        "ltv_erosion_usd": "1260.00",
+        "annualized_exposure_usd": "50400.0",
+        "offending_rule_ids": [
+          "r_seat_shelf"
+        ]
+      },
+      {
+        "vuln_class": "unnecessary_concession",
+        "severity": "high",
+        "persona_ids": [
+          "persona_shelf_001"
+        ],
+        "ltv_erosion_usd": "0.00",
+        "annualized_exposure_usd": "0.00",
+        "offending_rule_ids": [
+          "r_seat_shelf"
+        ]
+      }
+    ],
+    "patch": {
+      "patch_id": "patch-acct_002",
+      "base_policy_version": "v1",
+      "operations": [
+        {
+          "op": "lower_ceiling",
+          "value": 30,
+          "rule_id": null
+        },
+        {
+          "op": "shorten_duration",
+          "value": 3,
+          "rule_id": null
+        },
+        {
+          "op": "extend_cooldown",
+          "value": 180,
+          "rule_id": null
+        },
+        {
+          "op": "substitute_offer",
+          "value": "non_monetary",
+          "rule_id": null
+        }
+      ],
+      "justification": "Caps monetary concessions and replaces the repeatable discount with value recovery.",
+      "projected_margin_saved_usd": "1260.00",
+      "projected_save_rate_delta": -0.02,
+      "requires_human_approval": false
+    },
+    "after_offer": {
+      "text": "Complimentary workflow consultation and right-sizing review",
+      "offer_type": "consultation",
+      "discount_pct": "0",
+      "duration_months": 0,
+      "sequence_idx": 2,
+      "rule_id": "r_seat_shelf"
+    },
+    "masr_before": "0.8000",
+    "masr_after": "0.9500",
+    "improved": true
+  },
+  {
+    "run_id": "267e40e5-46ec-5a07-8241-f62f121cb596",
+    "account_id": "acct_003",
+    "account_name": "Beacon Commerce",
+    "archetype": "discount_grifter",
+    "timestamp": "2026-08-01T12:00:00+00:00",
+    "gap": {
+      "unused_high_value_features": [
+        "audit_log"
+      ],
+      "utilization_ratio": 0.83,
+      "roi_gap_usd_monthly": "400",
+      "recommended_action": "rightsizing",
+      "narrative": "Beacon Commerce has a measured utilization gap requiring rightsizing.",
+      "evidence": [
+        "90-day telemetry aggregation",
+        "entitlement comparison"
+      ]
+    },
+    "before_offer": {
+      "text": "40% discount for six months",
+      "offer_type": "percent_off",
+      "discount_pct": "40",
+      "duration_months": 6,
+      "sequence_idx": 1,
+      "rule_id": "r_grifter"
+    },
+    "alerts": [
+      {
+        "vuln_class": "uncapped_discount",
+        "severity": "critical",
+        "persona_ids": [
+          "persona_grifter_001"
+        ],
+        "ltv_erosion_usd": "1800.00",
+        "annualized_exposure_usd": "72000.0",
+        "offending_rule_ids": [
+          "r_grifter"
+        ]
+      },
+      {
+        "vuln_class": "unnecessary_concession",
+        "severity": "high",
+        "persona_ids": [
+          "persona_grifter_001"
+        ],
+        "ltv_erosion_usd": "0.00",
+        "annualized_exposure_usd": "0.00",
+        "offending_rule_ids": [
+          "r_grifter"
+        ]
+      }
+    ],
+    "patch": {
+      "patch_id": "patch-acct_003",
+      "base_policy_version": "v1",
+      "operations": [
+        {
+          "op": "lower_ceiling",
+          "value": 30,
+          "rule_id": null
+        },
+        {
+          "op": "shorten_duration",
+          "value": 3,
+          "rule_id": null
+        },
+        {
+          "op": "extend_cooldown",
+          "value": 180,
+          "rule_id": null
+        },
+        {
+          "op": "substitute_offer",
+          "value": "non_monetary",
+          "rule_id": null
+        }
+      ],
+      "justification": "Caps monetary concessions and replaces the repeatable discount with value recovery.",
+      "projected_margin_saved_usd": "1800.00",
+      "projected_save_rate_delta": -0.02,
+      "requires_human_approval": false
+    },
+    "after_offer": {
+      "text": "Complimentary workflow consultation and right-sizing review",
+      "offer_type": "consultation",
+      "discount_pct": "0",
+      "duration_months": 0,
+      "sequence_idx": 2,
+      "rule_id": "r_grifter"
+    },
+    "masr_before": "0.8000",
+    "masr_after": "0.9500",
+    "improved": true
+  },
+  {
+    "run_id": "e44d9795-5af9-5832-b471-c1ceebd17d1f",
+    "account_id": "acct_004",
+    "account_name": "Cobalt Media",
+    "archetype": "discount_grifter",
+    "timestamp": "2026-08-01T12:00:00+00:00",
+    "gap": {
+      "unused_high_value_features": [
+        "audit_log"
+      ],
+      "utilization_ratio": 0.83,
+      "roi_gap_usd_monthly": "400",
+      "recommended_action": "rightsizing",
+      "narrative": "Cobalt Media has a measured utilization gap requiring rightsizing.",
+      "evidence": [
+        "90-day telemetry aggregation",
+        "entitlement comparison"
+      ]
+    },
+    "before_offer": {
+      "text": "40% discount for six months",
+      "offer_type": "percent_off",
+      "discount_pct": "40",
+      "duration_months": 6,
+      "sequence_idx": 1,
+      "rule_id": "r_grifter"
+    },
+    "alerts": [
+      {
+        "vuln_class": "uncapped_discount",
+        "severity": "critical",
+        "persona_ids": [
+          "persona_grifter_001"
+        ],
+        "ltv_erosion_usd": "1800.00",
+        "annualized_exposure_usd": "72000.0",
+        "offending_rule_ids": [
+          "r_grifter"
+        ]
+      },
+      {
+        "vuln_class": "unnecessary_concession",
+        "severity": "high",
+        "persona_ids": [
+          "persona_grifter_001"
+        ],
+        "ltv_erosion_usd": "0.00",
+        "annualized_exposure_usd": "0.00",
+        "offending_rule_ids": [
+          "r_grifter"
+        ]
+      }
+    ],
+    "patch": {
+      "patch_id": "patch-acct_004",
+      "base_policy_version": "v1",
+      "operations": [
+        {
+          "op": "lower_ceiling",
+          "value": 30,
+          "rule_id": null
+        },
+        {
+          "op": "shorten_duration",
+          "value": 3,
+          "rule_id": null
+        },
+        {
+          "op": "extend_cooldown",
+          "value": 180,
+          "rule_id": null
+        },
+        {
+          "op": "substitute_offer",
+          "value": "non_monetary",
+          "rule_id": null
+        }
+      ],
+      "justification": "Caps monetary concessions and replaces the repeatable discount with value recovery.",
+      "projected_margin_saved_usd": "1800.00",
+      "projected_save_rate_delta": -0.02,
+      "requires_human_approval": false
+    },
+    "after_offer": {
+      "text": "Complimentary workflow consultation and right-sizing review",
+      "offer_type": "consultation",
+      "discount_pct": "0",
+      "duration_months": 0,
+      "sequence_idx": 2,
+      "rule_id": "r_grifter"
+    },
+    "masr_before": "0.8000",
+    "masr_after": "0.9500",
+    "improved": true
+  }
+]

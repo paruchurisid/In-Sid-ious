@@ -1,0 +1,12 @@
+[project]
+name = "retention-swarm"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["pydantic>=2.7", "fastapi>=0.110", "uvicorn>=0.29", "polars>=1.0", "numpy>=1.26"]
+
+[tool.setuptools.packages.find]
+include = ["packages*", "agents*", "services*", "data*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
